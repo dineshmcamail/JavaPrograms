@@ -1,0 +1,7 @@
+Raj,12/09/2019,Products,120
+Kamal,12/05/2019,Home,170
+John,05/09/2019,Checkout,220
+Krish,10/12/2019,Home,230
+Rajan,01/31/2019,Home,190
+Johny,03/09/2019,Home,180
+Mohammed,10/19/2019,Checkout,230
