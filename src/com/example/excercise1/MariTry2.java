@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -33,7 +32,7 @@ public class MariTry2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MariTry2 obj = new MariTry2();
-		String fileUrl ="C:\\\\Users\\jisadp9\\Documents\\workspace-sts-3.9.3.RELEASE\\Project1\\src\\Config\\data.log";
+		String fileUrl ="C:\\\\Users\\jisadp9\\Documents\\workspace-sts-3.9.3.RELEASE\\JavaPrograms\\src\\Config\\data.log";
 		try {
 			System.out.println(obj.getTopUser(fileUrl));
 		} catch (IOException e) {

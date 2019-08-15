@@ -5,3 +5,12 @@ Krish,10/12/2019,Home,230
 Rajan,01/31/2019,Home,190
 Johny,03/09/2019,Home,180
 Mohammed,10/19/2019,Checkout,230
+
+
+arun 2019-01-04T12:00:35 products
+mary 2019-01-04T01:00:35 sales
+bob 2019-01-04T12:00:36 catalog
+arun 2019-01-04T13:00:35 carts
+bob 2019-12-21T12:00:35 products
+mary 2019-10-03T12:00:35 sales
+bob 2019-11-03T12:00:36 catalog

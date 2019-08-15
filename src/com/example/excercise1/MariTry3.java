@@ -1,5 +1,7 @@
 package com.example.excercise1;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -41,12 +43,19 @@ public class MariTry3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MariTry3 obj = new MariTry3();
-		String fileUrl ="C:\\\\Users\\jisadp9\\Documents\\workspace-sts-3.9.3.RELEASE\\Project1\\src\\Config\\data.log";
+		String fileUrl ="C:\\Users\\jisadp9\\Documents\\workspace-sts-3.9.3.RELEASE\\JavaPrograms\\src\\Config\\data.log";
 		try {
 			List<Student> studentsList = obj.getTopUser(fileUrl);
-			for(Student s: studentsList) {
-				System.out.println(s.getName()+"-"+s.getDateTime()+"-"+s.getPage());
+			
+			//BufferedWriter writer = new BufferedWriter(new FileWriter(fileUrl));
+			for(Student s: studentsList) {				
+			   // writer.write(s.getName()+" "+s.getDateTime()+" "+s.getPage());
+			    //writer.newLine();
+			    System.out.println(s.getName()+" "+s.getDateTime()+" "+s.getPage());
 			}
+		//	writer.close();
+			
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
