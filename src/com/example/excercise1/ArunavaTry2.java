@@ -10,14 +10,18 @@ public class ArunavaTry2 {
 	
 	public List<Emp> getSorted(List<Emp> inputList) {
 		
-		Collections.sort(inputList, new Comparator<Emp>() {
+		//Java 7 sorting
+		/*Collections.sort(inputList, new Comparator<Emp>() {
 			
 			@Override
 			public int compare(Emp lName1, Emp lName2) {
 				return lName1.getlName().split("")[1].compareTo(lName2.getlName().split("")[1]);
 			}
 			
-		});
+		});*/
+		
+		//Java 8 Sorting
+		Collections.sort(inputList, (emp1, emp2) -> emp1.getlName().split("")[1].compareTo(emp2.getlName().split("")[1]));
 		
 		return inputList;
 	}
@@ -26,7 +30,7 @@ public class ArunavaTry2 {
 		// TODO Auto-generated method stub
 		
 		List<Emp> inputList = Arrays.asList(new Emp("John", "Dbvid"),
-				new Emp("Mike", "Tyson"),
+				new Emp("Mike", "Tison"),
 				new Emp("Rob","Sherry"),
 				new Emp("Angeline", "Jones"),
 				new Emp("Micky", "Mouse"), 
